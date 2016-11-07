@@ -1,0 +1,73 @@
+main {
+	padding-top:100px;
+}
+main .row {
+	margin-bottom: 20px;
+}
+.box {
+	height: 200px;
+	text-align: center;
+	padding-top: 30px;
+}
+* {
+	box-sizing: border-box;
+}
+.row {
+	max-width: 1000px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+}
+.col-3, .col-4, .col-6, .col-12 {
+	float: left;
+	padding-left: 1.04166666%;
+	padding-right: 1.04166666%;
+	width: 100%;
+}
+.orange {
+	background-color: orange;
+}
+.red {
+	background-color: red;
+}
+.purple {
+	background-color: purple;
+}
+.yellow {
+	background-color: yellow;
+}
+.pink {
+	background-color: pink;
+}
+.blue {
+	background-color: blue;
+}
+.lavender {
+	background-color: lavender;
+}
+@media only screen and (min-width: 640px){
+	.col-3 {
+		min-width: 25%;
+		width:25%;
+	}
+	.col-4 {
+		min-width: 33.33%;
+		width: 33.33%;
+	}
+	.col-6 {
+		min-width:50%;
+		width: 50%;
+	}
+	.col-12 {
+		min-width: 100%;
+		width: 100%;
+	}
+}
+.row::before,.row::after {
+	display:table;
+	content:'';
+}
+.row::after {
+	clear: both;
+}
